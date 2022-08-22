@@ -1,26 +1,43 @@
 public class Main {
     public static void main(String[] args) {
         //Задание 1
-        byte a = 3; short b = 2; int c = 4; long d = 1000L;
+        byte a = 3; short b = 2; int c = 4; long d = 10000000000000L;
         float f = 1.234f; double w = 1.23456;
+        boolean x = true; char q = 'q';
         //Задание 2
         double firstWeight = 78.2;
         double secondWeight = 82.7;
         double summaryWeight = firstWeight+secondWeight;
-        double diffWeight = secondWeight - firstWeight;
+        double diffWeight = Math.abs(secondWeight - firstWeight);
         System.out.println("Общий вес двух бойцов: " + summaryWeight);
         System.out.println("Разница в весе: " + diffWeight);
         //Задание 3
-        double bananaWeight = 80;
-        double milkWeight = 105;
-        double iceCreamWeight = 100;
-        double eggWeight = 70;
-        double blendWeight = (bananaWeight*5+milkWeight*2+iceCreamWeight*2+eggWeight*4)/1000;
-        System.out.println("Масса завтрака: " + blendWeight);
+        int banana = 5;
+        int bananaWeight = 80;
+
+        int milk = 200/100;
+        int milkWeight = 105;
+
+        int iceCream = 2;
+        int iceCreamWeight = 100;
+
+        int egg = 4;
+        int eggWeight = 70;
+
+        int blendWeight = (bananaWeight*banana+milkWeight*milk+iceCreamWeight*iceCream+eggWeight*egg);
+        int grams = 1000;
+
+        double total = blendWeight/(grams*1.0);
+        System.out.println("Масса завтрака: " + total);
         //Задание 4
-        int aim = 7; int dayWeight1=250; int dayWeight2=500;
-        int days1 = aim*1000/dayWeight1; int days2=aim*1000/dayWeight2;
+        int aim = 7;
+        int gramsInKg = 1000;
+        int dayWeight1=250;
+        int dayWeight2=500;
+        int days1 = aim*gramsInKg/dayWeight1; int days2=aim*gramsInKg/dayWeight2;
         int daysMid = (days1+days2)/2;
+        System.out.println("Максимальное кол-во дней: " + days1);
+        System.out.println("Минимальное кол-во дней: " + days2);
         System.out.println("Среднее количество дней: " + daysMid);
         //Задание 5
         int misha = 67760; int denis =83690; int kristina = 76230;
